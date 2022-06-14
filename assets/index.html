@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Datta Able - Light layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome-all.min.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="assets/plugins/animation/css/animate.min.css">
+    <!-- prism css -->
+    <link rel="stylesheet" href="assets/plugins/prism/css/prism.min.css">
+    <!-- vendor css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- data tables css -->
+    <link rel="stylesheet" href="assets/plugins/data-tables/css/datatables.min.css">
+    <!-- poopins font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="layout-6">
+    <!-- [ navigation menu ] start -->
+    <nav class="pcoded-navbar menu-light brand-lightblue icon-colored menupos-static">
+        <div class="navbar-wrapper">
+            <div class="navbar-brand header-logo">
+                <a href="index.html" class="b-brand">
+                    <div class="b-bg">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <!-- <div class="b-bg" style="background-color: transparent;">
+                        <img src="assets/images/logo.png" class="feather icon-academic" alt="" style="width: 110%;">
+                    </div> -->
+                    <span class="b-title">Institut Asia</span>
+                </a>
+                <a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+            </div>
+            <div class="navbar-content scroll-div">
+                <ul class="nav pcoded-inner-navbar">
+                    <li class="nav-item pcoded-menu-caption">
+                        <label style="font-size: large;">SIMAKA</label>
+                    </li>
+                    <li data-username="Vertical Horizontal Box Layout RTL fixed static collapse menu color icon dark"
+                        class="nav-item pcoded-hasmenu">
+                        <a href="#!" class="nav-link"><span class="pcoded-micon"><i
+                                    class="feather icon-layout"></i></span><span class="pcoded-mtext">Page
+                                layouts</span></a>
+                        <ul class="pcoded-submenu">
+                            <li class="pcoded-hasmenu"><a href="#!" class="">Vertical</a>
+                                <ul class="pcoded-submenu">
+                                    <li class=""><a href="layout-static.html" class="" target="_blank">Static</a></li>
+                                    <li class=""><a href="layout-fixed.html" class="" target="_blank">Fixed</a></li>
+                                    <li class=""><a href="layout-menu-fixed.html" class="" target="_blank">Navbar
+                                            fixed</a></li>
+                                    <li class=""><a href="layout-mini-menu.html" class="" target="_blank">Collapse
+                                            menu</a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="layout-horizontal.html" class="" target="_blank">Horizontal</a></li>
+                            <li class=""><a href="layout-box.html" class="" target="_blank">Box layout</a></li>
+                            <li class=""><a href="layout-rtl.html" class="" target="_blank">RTL</a></li>
+                            <li class=""><a href="layout-light.html" class="" target="_blank">Light layout</a></li>
+                            <li class=""><a href="layout-dark.html" class="" target="_blank">Dark layout <span
+                                        class="pcoded-badge label label-danger">Hot</span></a></li>
+                            <li class=""><a href="layout-menu-icon.html" class="" target="_blank">Color icon</a></li>
+                        </ul>
+                    </li>
+                    <li data-username="Need Support" class="nav-item"><a href="https://codedthemes.support-hub.io/"
+                            class="nav-link" target="_blank"><span class="pcoded-micon"><i
+                                    class="feather icon-help-circle"></i></span><span class="pcoded-mtext">Need support
+                                ?</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- [ navigation menu ] end -->
+
+    <!-- header start -->
+    <header class="navbar pcoded-header navbar-expand-lg navbar-light">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li><a href="#!" class="full-screen" onclick="javascript:toggleFullScreen()"><i
+                            class="feather icon-maximize"></i></a></li>
+                <li class="nav-item">
+                    <div class="main-search">
+                        <div class="input-group">
+                            <input type="text" id="m-search" class="form-control" placeholder="Search . . .">
+                            <a href="#!" class="input-group-append search-close">
+                                <i class="feather icon-x input-group-text"></i>
+                            </a>
+                            <span class="input-group-append search-btn btn btn-primary">
+                                <i class="feather icon-search input-group-text"></i>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="form-group mb-0">
+                        <div class="switch switch-primary d-inline m-r-10">
+                            <input type="checkbox" id="box-layouts">
+                            <label for="box-layouts" class="cr"></label>
+                        </div>
+                        <label class="text-light">Minimize</label>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="layout-type">
+                        <a href="#!" data-value="dark" style="padding-top: 100px;">
+                            <i class="feather icon-moon" style="font-size: 17px; color: yellow;"></i>
+                        </a>
+                        <a href="#!" data-value="reset">
+                            <i class="feather icon-sun"
+                                style="font-size: 17px; color: rgb(255, 255, 255); margin-left: 18px;"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li>
+                    <div class="dropdown drp-user">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            John doe&nbsp;
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right profile-notification">
+                            <div class="pro-head">
+                                <img src="assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image">
+                                <span>John Doe</span>
+                                <a href="auth-signin.html" class="dud-logout" title="Logout">
+                                    <i class="feather icon-log-out"></i>
+                                </a>
+                            </div>
+                            <ul class="pro-body">
+                                <li><a href="#!" class="dropdown-item"><i class="feather icon-settings"></i>
+                                        Settings</a></li>
+                                <li><a href="#!" class="dropdown-item"><i class="feather icon-user"></i> Profile</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main content start -->
+    <div class="pcoded-main-container">
+        <div class="pcoded-wrapper">
+            <div class="pcoded-content">
+                <div class="pcoded-inner-content">
+                    <!-- header mini guide -->
+                    <div class="page-header">
+                        <div class="page-block">
+                            <div class="row align-items-center">
+                                <div class="col-md-12">
+                                    <div class="page-header-title">
+                                        <h5 class="m-b-10">Beranda</h5>
+                                    </div>
+                                    <ul class="breadcrumb">
+                                        <li class="breadcrumb-item">
+                                            <a href="index.html">
+                                                <i class="feather icon-home"></i>
+                                            </a>
+                                        </li>
+                                        <li class="breadcrumb-item">
+                                            <a href="#!">Beranda</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- header mini guide -->
+                    <div class="main-body">
+                        <div class="page-wrapper">
+                            <!-- [ Main Content ] start -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card lay-customizer">
+                                        <div class="card-block">
+                                            <h5>Beranda</h5>
+                                            <div class="table-responsive">
+                                                <table id="responsive-table" class="display table dt-responsive nowrap"
+                                                    style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>First name</th>
+                                                            <th>Last name</th>
+                                                            <th>Position</th>
+                                                            <th>Office</th>
+                                                            <th>Age</th>
+                                                            <th>Start date</th>
+                                                            <th>Salary</th>
+                                                            <th>Extn.</th>
+                                                            <th>E-mail</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Tiger</td>
+                                                            <td>Nixon</td>
+                                                            <td>System Architect</td>
+                                                            <td>Edinburgh</td>
+                                                            <td>61</td>
+                                                            <td>2011/04/25</td>
+                                                            <td>$320,800</td>
+                                                            <td>5421</td>
+                                                            <td>t.nixon@datatables.net</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Garrett</td>
+                                                            <td>Winters</td>
+                                                            <td>Chief Executive Officer (CEO)</td>
+                                                            <td>Tokyo</td>
+                                                            <td>63</td>
+                                                            <td>2011/07/25</td>
+                                                            <td>$170,750</td>
+                                                            <td>8422</td>
+                                                            <td>g.winters@datatables.net</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Ashton</td>
+                                                            <td>Cox</td>
+                                                            <td>Junior Technical Author</td>
+                                                            <td>San Francisco</td>
+                                                            <td>66</td>
+                                                            <td>2009/01/12</td>
+                                                            <td>$86,000</td>
+                                                            <td>1562</td>
+                                                            <td>a.cox@datatables.net</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Cedric</td>
+                                                            <td>Kelly</td>
+                                                            <td>Senior Javascript Developer</td>
+                                                            <td>Edinburgh</td>
+                                                            <td>22</td>
+                                                            <td>2012/03/29</td>
+                                                            <td>$433,060</td>
+                                                            <td>6224</td>
+                                                            <td>c.kelly@datatables.net</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Airi</td>
+                                                            <td>Satou</td>
+                                                            <td>Accountant</td>
+                                                            <td>Tokyo</td>
+                                                            <td>33</td>
+                                                            <td>2008/11/28</td>
+                                                            <td>$162,700</td>
+                                                            <td>5407</td>
+                                                            <td>a.satou@datatables.net</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Brielle</td>
+                                                            <td>Williamson</td>
+                                                            <td>Integration Specialist</td>
+                                                            <td>New York</td>
+                                                            <td>61</td>
+                                                            <td>2012/12/02</td>
+                                                            <td>$372,000</td>
+                                                            <td>4804</td>
+                                                            <td>b.williamson@datatables.net</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Herrod</td>
+                                                            <td>Chandler</td>
+                                                            <td>Sales Assistant</td>
+                                                            <td>San Francisco</td>
+                                                            <td>59</td>
+                                                            <td>2012/08/06</td>
+                                                            <td>$137,500</td>
+                                                            <td>9608</td>
+                                                            <td>h.chandler@datatables.net</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Rhona</td>
+                                                            <td>Davidson</td>
+                                                            <td>Integration Specialist</td>
+                                                            <td>Tokyo</td>
+                                                            <td>55</td>
+                                                            <td>2010/10/14</td>
+                                                            <td>$327,900</td>
+                                                            <td>6200</td>
+                                                            <td>r.davidson@datatables.net</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Colleen</td>
+                                                            <td>Hurst</td>
+                                                            <td>Javascript Developer</td>
+                                                            <td>San Francisco</td>
+                                                            <td>39</td>
+                                                            <td>2009/09/15</td>
+                                                            <td>$205,500</td>
+                                                            <td>2360</td>
+                                                            <td>c.hurst@datatables.net</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Sonya</td>
+                                                            <td>Frost</td>
+                                                            <td>Software Engineer</td>
+                                                            <td>Edinburgh</td>
+                                                            <td>23</td>
+                                                            <td>2008/12/13</td>
+                                                            <td>$103,600</td>
+                                                            <td>1667</td>
+                                                            <td>s.frost@datatables.net</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jena</td>
+                                                            <td>Gaines</td>
+                                                            <td>Office Manager</td>
+                                                            <td>London</td>
+                                                            <td>30</td>
+                                                            <td>2008/12/19</td>
+                                                            <td>$90,560</td>
+                                                            <td>3814</td>
+                                                            <td>j.gaines@datatables.net</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Quinn</td>
+                                                            <td>Flynn</td>
+                                                            <td>Support Lead</td>
+                                                            <td>Edinburgh</td>
+                                                            <td>22</td>
+                                                            <td>2013/03/03</td>
+                                                            <td>$342,000</td>
+                                                            <td>9497</td>
+                                                            <td>q.flynn@datatables.net</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Charde</td>
+                                                            <td>Marshall</td>
+                                                            <td>Regional Director</td>
+                                                            <td>San Francisco</td>
+                                                            <td>36</td>
+                                                            <td>2008/10/16</td>
+                                                            <td>$470,600</td>
+                                                            <td>6741</td>
+                                                            <td>c.marshall@datatables.net</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Haley</td>
+                                                            <td>Kennedy</td>
+                                                            <td>Senior Marketing Designer</td>
+                                                            <td>London</td>
+                                                            <td>43</td>
+                                                            <td>2012/12/18</td>
+                                                            <td>$313,500</td>
+                                                            <td>3597</td>
+                                                            <td>h.kennedy@datatables.net</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Tatyana</td>
+                                                            <td>Fitzpatrick</td>
+                                                            <td>Regional Director</td>
+                                                            <td>London</td>
+                                                            <td>19</td>
+                                                            <td>2010/03/17</td>
+                                                            <td>$385,750</td>
+                                                            <td>1965</td>
+                                                            <td>t.fitzpatrick@datatables.net</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ Main Content ] end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main content end -->
+
+    <!-- Required Js -->
+    <script src="assets/js/vendor-all.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/pcoded.min.js"></script>
+
+    <!-- amchart js -->
+    <script src="assets/plugins/amchart/js/amcharts.js"></script>
+    <script src="assets/plugins/amchart/js/gauge.js"></script>
+    <script src="assets/plugins/amchart/js/serial.js"></script>
+    <script src="assets/plugins/amchart/js/light.js"></script>
+    <script src="assets/plugins/amchart/js/pie.min.js"></script>
+    <script src="assets/plugins/amchart/js/ammap.min.js"></script>
+    <script src="assets/plugins/amchart/js/usaLow.js"></script>
+    <script src="assets/plugins/amchart/js/radar.js"></script>
+    <script src="assets/plugins/amchart/js/worldLow.js"></script>
+    <!-- notification Js -->
+    <script src="assets/plugins/notification/js/bootstrap-growl.min.js"></script>
+
+    <!-- datatable Js -->
+    <script src="assets/plugins/data-tables/js/datatables.min.js"></script>
+    <script src="assets/js/pages/tbl-datatable-custom.js"></script>
+
+    <!-- prism Js -->
+    <script src="assets/plugins/prism/js/prism.min.js"></script>
+    <script>
+        $('.layout-type > a').on('click', function () {
+            var temp = $(this).attr('data-value');
+            $('.layout-type > a').removeClass('active');
+            $(this).addClass('active');
+            $('head').append('<link rel="stylesheet" class="layout-css" href="">');
+            if (temp == "menu-dark") {
+                $('.pcoded-navbar').removeClassPrefix('menu-');
+                $('.pcoded-navbar').removeClass('navbar-dark');
+            }
+            if (temp == "menu-light") {
+                $('.pcoded-navbar').removeClassPrefix('menu-');
+                $('.pcoded-navbar').removeClass('navbar-dark');
+                $('.pcoded-navbar').addClass(temp);
+            }
+            if (temp == "reset") {
+                location.reload();
+            }
+            if (temp == "dark") {
+                $('.pcoded-navbar').removeClassPrefix('menu-');
+                $('.pcoded-navbar').addClass('navbar-dark');
+                $('.layout-css').attr("href", "assets/css/layouts/dark.css");
+            } else {
+                $('.layout-css').attr("href", "");
+            }
+        });
+        // Background images
+        $('.bg-images > a').on('click', function () {
+            var temp = $(this).attr('data-value');
+            $('body').removeAttr('style');
+            $('.bg-images > a').removeClass('active');
+            $('body').css({ 'background-image': temp, 'background-size': 'cover' });
+        });
+        // Background pattern
+        $('.bg-images.pattern > a').on('click', function () {
+            var temp = $(this).attr('data-value');
+            $('body').removeAttr('style');
+            $('.bg-images.pattern > a').removeClass('active');
+            $('body').css({ 'background-image': temp, 'background-size': 'auto' });
+        });
+        // Background Color
+        $('.laybg-color > a').on('click', function () {
+            var temp = $(this).attr('data-value');
+            $('body').removeAttr('style');
+            $('.laybg-color > a').removeClass('active');
+            $(this).addClass('active');
+            $('body').css('background', temp);
+        });
+        // Active Color
+        $('.active-color > a').on('click', function () {
+            var temp = $(this).attr('data-value');
+            $('.active-color > a').removeClass('active');
+            $(this).addClass('active');
+            if (temp == "active-default") {
+                $('.pcoded-navbar').removeClassPrefix('active-');
+            } else {
+                $('.pcoded-navbar').removeClassPrefix('active-');
+                $('.pcoded-navbar').addClass(temp);
+            }
+        });
+        // Caption Hide
+        $('#caption-hide').change(function () {
+            if ($(this).is(":checked")) {
+                $('.pcoded-navbar').addClass('caption-hide');
+            } else {
+                $('.pcoded-navbar').removeClass('caption-hide');
+            }
+        });
+        // title Color
+        $('.title-color > a').on('click', function () {
+            var temp = $(this).attr('data-value');
+            $('.title-color > a').removeClass('active');
+            $(this).addClass('active');
+            if (temp == "title-default") {
+                $('.pcoded-navbar').removeClassPrefix('title-');
+            } else {
+                $('.pcoded-navbar').removeClassPrefix('title-');
+                $('.pcoded-navbar').addClass(temp);
+            }
+        });
+        // Menu Icon Color
+        $('#icon-colored').change(function () {
+            if ($(this).is(":checked")) {
+                $('.pcoded-navbar').addClass('icon-colored');
+            } else {
+                $('.pcoded-navbar').removeClass('icon-colored');
+            }
+        });
+        // Box layouts
+        $('#box-layouts').change(function () {
+            if ($(this).is(":checked")) {
+                $('body').addClass('container');
+                $('body').addClass('box-layout');
+            } else {
+                $('body').removeClass('container');
+                $('body').removeClass('box-layout');
+            }
+        });
+        // Menu Dropdown icon
+        function drpicon(temp) {
+            if (temp == "style1") {
+                $('.pcoded-navbar').removeClassPrefix('drp-icon-');
+            } else {
+                $('.pcoded-navbar').removeClassPrefix('drp-icon-');
+                $('.pcoded-navbar').addClass('drp-icon-' + temp);
+            }
+        }
+        // Menu subitem icon
+        function menuitemicon(temp) {
+            if (temp == "style1") {
+                $('.pcoded-navbar').removeClassPrefix('menu-item-icon-');
+            } else {
+                $('.pcoded-navbar').removeClassPrefix('menu-item-icon-');
+                $('.pcoded-navbar').addClass('menu-item-icon-' + temp);
+            }
+        }
+        $.fn.removeClassPrefix = function (prefix) {
+            this.each(function (i, it) {
+                var classes = it.className.split(" ").map(function (item) {
+                    return item.indexOf(prefix) === 0 ? "" : item;
+                });
+                it.className = classes.join(" ");
+            });
+            return this;
+        };
+    </script>
+</body>
+
+</html>
